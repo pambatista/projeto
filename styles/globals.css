@@ -128,8 +128,12 @@ p {
   padding: 1rem;
 }
 
-.page-header__content > img {
+.page-header__content > .img {
   display: none;
+}
+.icon {
+  max-width: 24px !important;
+  width: 24px !important;
 }
 
 @media (min-width: 768px) {
@@ -137,7 +141,7 @@ p {
     font-size: 60px;
     line-height: 60px;
   }
-  .page-header__content > img {
+  .page-header__content > .img {
     display: block;
   }
 }

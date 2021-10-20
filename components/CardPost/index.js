@@ -15,9 +15,9 @@ function CardPost({post}) {
           <h2>{post.title}</h2>
           {
             !isOpenPost ? (
-              <img width={24} height={24} src="/icons/arrow-down.svg" onClick={() => setIsOpenPost(true)} aimgm" />
+              <Image layout='intrinsic' width={24} height={24}  style="icon"   src="/icons/arrow-down.svg" onClick={() => setIsOpenPost(true)} alt="imagem" />
             ) : (
-              <img width={24} height={24} src="/icons/arrow-up.svg" onClick={() => setIsOpenPost(false)} alt="imagem"  />
+              <Image layout='intrinsic' width={24} height={24}  style="icon"  src="/icons/arrow-up.svg" onClick={() => setIsOpenPost(false)} alt="imagem"  />
             )
           }
         </header>
@@ -31,7 +31,7 @@ function CardPost({post}) {
                 <Link href={`/posts/${post.slug}`}>
                   <a>
                     <span>Ler mais</span>
-                    <img width={24} height={24}  src="/icons/arrow-right.svg"  alt="imagem" />
+                    <Image layout='intrinsic' width={24} height={24}  style="icon"  src="/icons/arrow-right.svg"  alt="imagem" />
                   </a>
                 </Link>
               </footer>
@@ -55,7 +55,7 @@ function CardPost({post}) {
             <Link href={`/posts/${post.slug}`}>
               <a>
                 <span>Ler mais</span>
-                <img src="/icons/arrow-right.svg"  alt="imagem"/>
+                <Image src="/icons/arrow-right.svg" layout='intrinsic' width={24} height={24}  style="icon"   alt="imagem"/>
               </a>
             </Link>
           </footer>

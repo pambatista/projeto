@@ -23,10 +23,12 @@ export default function Header() {
         <Link href="/">
           <a>
 
-            <img src="/images/logo.svg" alt="Scrumind" className={styles.logo} />
+            <Image layout='intrinsic' width={150} height={50} src="/images/logo.svg" alt="Scrumind" style={styles.logo} />
           </a>
         </Link>
-        <img src="/icons/menu.svg" alt="menu" className={styles.menu_mobile} onClick={handleOpenMenu} />
+        <div className={styles.menu_mobile}>
+        <Image layout='intrinsic' width={16} height={16} src="/icons/menu.svg" alt="menu" onClick={handleOpenMenu} />
+        </div>
         <nav className={styles.menu}>
           <Navbar />
         </nav>
@@ -36,10 +38,10 @@ export default function Header() {
               <div className={styles.mobile__header}>
                 <Link href="/">
                   <a>
-                    <img src="/images/logo.svg" alt="Scrumind" className={styles.logo} />
+                    <Image layout='intrinsic' width={100} height={30}  src="/images/logo.svg" alt="Scrumind" style={styles.logo} />
                   </a>
                 </Link>
-                <img src="/icons/close.svg" alt="fechar" onClick={handleCloseMenu} />
+                <Image layout='intrinsic' width={24} height={24}  style="icon" src="/icons/close.svg" alt="fechar" onClick={handleCloseMenu} />
               </div>
               <div className={styles.navegacao}>
                 <Navbar mobile={true} onClose={handleCloseMenu} />
