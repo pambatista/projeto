@@ -1,0 +1,14 @@
+.link {
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  line-height: 19px;
+  color: var(--link);
+  text-transform: uppercase;
+}
+
+.link__active {
+  font-weight: 700;
+  line-height: 19px;
+  color: var(--blue-500);
+}
+

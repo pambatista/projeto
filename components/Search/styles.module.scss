@@ -1,0 +1,36 @@
+.container {
+  width: 100%;
+  padding: 2rem;
+}
+
+.field {
+  max-width: 1133px;
+  margin: 0 auto;
+  background: var(--blue-100);
+  border: 1px solid var(--blue-300);
+  box-sizing: border-box;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  input, button {
+    border: 0;
+    background: transparent;
+  }
+
+  input {
+    padding: 0.5rem;
+    padding-left: 1rem;
+    width: 100%;
+    color: var(--blue-500);
+    outline: none;
+  }
+
+  button {
+    margin: 0.5rem;
+  }
+
+  input::placeholder {
+    color: var(--blue-300);
+  }
+
+}
