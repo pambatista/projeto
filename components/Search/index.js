@@ -6,7 +6,7 @@ function Search() {
     <div className={styles.container}>
       <div className={styles.field}>
         <button>
-          <Image src="/icons/search.svg"  alt="imagem"/>
+          <Image  width={24} src="/icons/search.svg"  alt="imagem"/>
         </button>
         <input type="text" placeholder="Pesquisar no blog..." />
       </div>

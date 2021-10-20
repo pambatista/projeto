@@ -18,7 +18,7 @@ export default function Home({posts}) {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est et mauris ipsum, amet duis.
             </p>
           </div>
-          <Image src="/images/urban.png" alt="imagem" />
+          <Image  width={24} src="/images/urban.png" alt="imagem" />
         </div>
       </header>
       <Search />
