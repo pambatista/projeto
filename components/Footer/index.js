@@ -16,7 +16,7 @@ function Footer() {
         <div className={styles.menu}>
           <Navbar menu={menu}/>
         </div>
-        <Image width={200} src="/images/logo.svg" alt="Scrumind"/>
+        <img src="/images/logo.svg" alt="Scrumind"/>
       </div>
     </div>
   )
